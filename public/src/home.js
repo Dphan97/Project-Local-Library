@@ -4,7 +4,8 @@ function getTotalBooksCount(books) {
 }
 
 function getTotalAccountsCount(accounts) {
-   return accounts.length;
+  let total = 0
+  return accounts.reduce(accounts => accounts + 1, total)
 }
 
 
